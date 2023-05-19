@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.form_1{
+    background: rgb(21,0,30);
+    background: linear-gradient(360deg, rgba(21,0,30,1) 0%, rgba(85,0,122,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.form{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: rgba( 198, 137, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form_div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+input{
+    outline: none;
+    text-align: center;
+}
+
+label{
+    text-align: center;
+    
+}
+
+.input_class{
+    background: rgba( 126, 211, 33, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button_box_class{
+    background: rgba( 0, 92, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    transition: 0.35s;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.button_box_class:hover{
+    transition: 0.35s;
+    transform: scale(1.05);
+}
+
+.button_box_class:active{
+    background: rgba(0, 255, 0, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(43, 255, 0, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.35s;
+}
+
+.navbar{
+    background: rgb(21,0,30);
+    background: linear-gradient(180deg, rgba(21,0,30,1) 0%, rgba(85,0,122,0.8) 100%);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.inner_nav{
+    width: 80%;
+    height: 80px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav_logo_box{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.logo_class{
+    width: 150px;
+    transition: 0.35s;
+
+}
+
+.nav_list_box{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+.nav_list_box li {
+    color: white;
+    transition: 0.35s;
+}
+
+.nav_list_box li:hover {
+    transition: 0.35s;
+    transform: scale(1.1);
+    color: rgba(216, 65, 253, 0.35);
+}
+
+.menu{
+    display: none;
+}
+
+.footer_box{
+    background: rgb(21,0,30);
+    background: linear-gradient(180deg, rgba(21,0,30,1) 0%, rgba(85,0,122,0.8) 100%);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_list{
+    width: 70%;
+    height: 80px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.link_list li {
+    color: white;
+    transition: 0.35s;
+}
+
+.link_list li:hover{
+    color: black;
+    transition: 0.35s;
+
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+    .inner_nav{
+        width: 90%;
+    }
+
+    .nav_list_box{
+        gap: 0px;
+        padding-right: 10px;
+    }
+    .nav_list_box li {
+        display: none;
+    }
+
+    .menu{
+        display:block;
+        width: 45px;
+        transition: 0.35s;
+    }
+
+    .menu:hover{
+        transition: 0.35s;
+        transform: scale(1.1);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .inner_nav{
+        width: 80%;
+    }
+
+    .nav_list_box{
+        gap: 20px;
+        padding-right: 0px;
+    }
+}
